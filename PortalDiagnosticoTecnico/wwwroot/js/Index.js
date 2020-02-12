@@ -426,16 +426,16 @@ function ActualizarEstado() {
 
 
     /**** Se inicializa todo con Iconos Grises ****/
-    $("#imgReducidoVideo").attr('src', 'images/iconGris.png');
-    $("#imgVideo").attr('src', 'images/iconGris.png');
-    $("#imgReducidoInternet").attr('src', 'images/iconGris.png');
-    $("#imgInternet").attr('src', 'images/iconGris.png');
-    $("#imgReducidoTelefonia").attr('src', 'images/iconGris.png');
-    $("#imgTelefonia").attr('src', 'images/iconGris.png');
-    $("#imgReducidoTelefoniaMovil").attr('src', 'images/iconGris.png');
-    $("#imgTelefoniaMovil").attr('src', 'images/iconGris.png');
-    $("#imgServicios").attr('src', 'images/iconGris.png');
-    $("#imgReducidoServicios").attr('src', 'images/iconGris.png');
+    $("#imgReducidoVideo").attr('src', '/Files/iconGris.png');
+    $("#imgVideo").attr('src', '/Files/iconGris.png');
+    $("#imgReducidoInternet").attr('src', '/Files/iconGris.png');
+    $("#imgInternet").attr('src', '/Files/iconGris.png');
+    $("#imgReducidoTelefonia").attr('src', '/Files/iconGris.png');
+    $("#imgTelefonia").attr('src', '/Files/iconGris.png');
+    $("#imgReducidoTelefoniaMovil").attr('src', '/Files/iconGris.png');
+    $("#imgTelefoniaMovil").attr('src', '/Files/iconGris.png');
+    $("#imgServicios").attr('src', '/Files/iconGris.png');
+    $("#imgReducidoServicios").attr('src', '/Files/iconGris.png');
 
     var datos = { accion: 'inicioWorkflow', nombre: 'abc', legajo: 'wdi585714' };
 
@@ -488,71 +488,71 @@ function ActualizarEstado() {
 
                             if (claveValor[0] == "Video") {
                                 if (claveValor[1].trim() == "OK") {
-                                    $("#imgReducidoVideo").attr('src', 'images/iconVerde.png');
-                                    $("#imgVideo").attr('src', 'images/iconVerde.png');
-                                    $("#imgVideoFlow").attr('src', 'images/iconVerde.png');
-                                    $("#imgVideoFlowApp").attr('src', 'images/iconVerde.png');
+                                    $("#imgReducidoVideo").attr('src', '/Files/iconVerde.png');
+                                    $("#imgVideo").attr('src', '/Files/iconVerde.png');
+                                    $("#imgVideoFlow").attr('src', '/Files/iconVerde.png');
+                                    $("#imgVideoFlowApp").attr('src', '/Files/iconVerde.png');
                                 }
                                 else {
-                                    $("#imgReducidoVideo").attr('src', 'images/iconRojo.png');
-                                    $("#imgVideo").attr('src', 'images/iconRojo.png');
-                                    $("#imgVideoFlow").attr('src', 'images/iconRojo.png');
-                                    $("#imgVideoFlowApp").attr('src', 'images/iconRojo.png');
+                                    $("#imgReducidoVideo").attr('src', '/Files/iconRojo.png');
+                                    $("#imgVideo").attr('src', '/Files/iconRojo.png');
+                                    $("#imgVideoFlow").attr('src', '/Files/iconRojo.png');
+                                    $("#imgVideoFlowApp").attr('src', '/Files/iconRojo.png');
                                     losServicios = false;
                                 }
                             }
                             else if (claveValor[0] == "Internet") {
                                 if (claveValor[1].trim() == "OK") {
-                                    $("#imgReducidoInternet").attr('src', 'images/iconVerde.png');
-                                    $("#imgInternet").attr('src', 'images/iconVerde.png');
-                                    $("#imgInternetSagem").attr('src', 'images/iconVerde.png');
-                                    $("#imgInternetHuawei").attr('src', 'images/iconVerde.png');
-                                    $("#imgInternetWifi").attr('src', 'images/iconVerde.png');
+                                    $("#imgReducidoInternet").attr('src', '/Files/iconVerde.png');
+                                    $("#imgInternet").attr('src', '/Files/iconVerde.png');
+                                    $("#imgInternetSagem").attr('src', '/Files/iconVerde.png');
+                                    $("#imgInternetHuawei").attr('src', '/Files/iconVerde.png');
+                                    $("#imgInternetWifi").attr('src', '/Files/iconVerde.png');
                                 }
                                 else {
-                                    $("#imgReducidoInternet").attr('src', 'images/iconRojo.png');
-                                    $("#imgInternet").attr('src', 'images/iconRojo.png');
-                                    $("#imgInternetSagem").attr('src', 'images/iconRojo.png');
-                                    $("#imgInternetHuawei").attr('src', 'images/iconRojo.png');
-                                    $("#imgInternetWifi").attr('src', 'images/iconRojo.png');
+                                    $("#imgReducidoInternet").attr('src', '/Files/iconRojo.png');
+                                    $("#imgInternet").attr('src', '/Files/iconRojo.png');
+                                    $("#imgInternetSagem").attr('src', '/Files/iconRojo.png');
+                                    $("#imgInternetHuawei").attr('src', '/Files/iconRojo.png');
+                                    $("#imgInternetWifi").attr('src', '/Files/iconRojo.png');
                                     losServicios = false;
                                 }
                             }
                             else if (claveValor[0] == "Telefonia") {
                                 if (claveValor[1].trim() == "OK") {
-                                    $("#imgReducidoTelefonia").attr('src', 'images/iconVerde.png');
-                                    $("#imgTelefonia").attr('src', 'images/iconVerde.png');
-                                    $("#imgTelefoniaLinea").attr('src', 'images/iconVerde.png');
+                                    $("#imgReducidoTelefonia").attr('src', '/Files/iconVerde.png');
+                                    $("#imgTelefonia").attr('src', '/Files/iconVerde.png');
+                                    $("#imgTelefoniaLinea").attr('src', '/Files/iconVerde.png');
                                 }
                                 else {
-                                    $("#imgReducidoTelefonia").attr('src', 'images/iconRojo.png');
-                                    $("#imgTelefonia").attr('src', 'images/iconRojo.png');
-                                    $("#imgTelefoniaLinea").attr('src', 'images/iconRojo.png');
+                                    $("#imgReducidoTelefonia").attr('src', '/Files/iconRojo.png');
+                                    $("#imgTelefonia").attr('src', '/Files/iconRojo.png');
+                                    $("#imgTelefoniaLinea").attr('src', '/Files/iconRojo.png');
                                     losServicios = false;
                                 }
                             }
                             else if (claveValor[0] == "TelefoniaMovil") {
                                 if (claveValor[1].trim() == "OK") {
-                                    $("#imgReducidoTelefoniaMovil").attr('src', 'images/iconVerde.png');
-                                    $("#imgTelefoniaMovil").attr('src', 'images/iconVerde.png');
-                                    $("#imgTelefoniaLineaMovil").attr('src', 'images/iconVerde.png');
+                                    $("#imgReducidoTelefoniaMovil").attr('src', '/Files/iconVerde.png');
+                                    $("#imgTelefoniaMovil").attr('src', '/Files/iconVerde.png');
+                                    $("#imgTelefoniaLineaMovil").attr('src', '/Files/iconVerde.png');
                                 }
                                 else {
-                                    $("#imgReducidoTelefoniaMovil").attr('src', 'images/iconRojo.png');
-                                    $("#imgTelefoniaMovil").attr('src', 'images/iconRojo.png');
-                                    $("#imgTelefoniaLineaMovil").attr('src', 'images/iconRojo.png');
+                                    $("#imgReducidoTelefoniaMovil").attr('src', '/Files/iconRojo.png');
+                                    $("#imgTelefoniaMovil").attr('src', '/Files/iconRojo.png');
+                                    $("#imgTelefoniaLineaMovil").attr('src', '/Files/iconRojo.png');
                                     losServicios = false;
                                 }
                             }
 
                         }
                         if (losServicios) {
-                            $("#imgServicios").attr('src', 'images/iconVerde.png');
-                            $("#imgReducidoServicios").attr('src', 'images/iconVerde.png');
+                            $("#imgServicios").attr('src', '/Files/iconVerde.png');
+                            $("#imgReducidoServicios").attr('src', '/Files/iconVerde.png');
                         }
                         else {
-                            $("#imgServicios").attr('src', 'images/iconRojo.png');
-                            $("#imgReducidoServicios").attr('src', 'images/iconRojo.png');
+                            $("#imgServicios").attr('src', '/Files/iconRojo.png');
+                            $("#imgReducidoServicios").attr('src', '/Files/iconRojo.png');
                         }
                     }
                 }
