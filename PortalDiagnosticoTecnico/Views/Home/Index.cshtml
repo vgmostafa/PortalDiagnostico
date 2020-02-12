@@ -574,8 +574,7 @@
     </div>
 
     @********* Sidebar Reducido **********@
-    <div class='col-1 elBorde elSidebar usaDetalle laSombra d-none' style='width: 100%;
-            display: flex' id='sidebarReducido'>
+    <div class='col-1 elBorde elSidebar usaDetalle laSombra d-none' style='width: 100%; padding-bottom: 20px;' id='sidebarReducido'>
         <div style='width: 100%' align="right">
             <img src='~/Files/pin.png' alt='' style='width: 20px; height: 20px; cursor: pointer'
                  class='rotateAbajo' onclick="rearmarPantalla('expandido')" />
@@ -601,32 +600,36 @@
         </div>
         <div style='width: 70%; float: left; padding-top: 12px'>
             @*<%-- Video --%>*@
-            <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
-               onclick="rearmarPantalla('expandidoVideo')">&#xe04b;</i>
+            @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
+               onclick="rearmarPantalla('expandidoVideo')">&#xe04b;</i>*@
+            <img src="~/Files/Camera-white.png" height="22" alt="Alternate Text" onclick="rearmarPantalla('expandidoVideo')" />
         </div>
         <div style='width: 20%; float: left'>
             <img id='imgReducidoVideo' src='~/Files/iconVerde.png' class='boton_grande' alt='' />
         </div>
         <div style='width: 70%; float: left; padding-top: 12px'>
             @*<%--Internet --%>*@
-            <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
-               onclick="rearmarPantalla('expandidoInternet')">&#xe894;</i>
+            @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
+               onclick="rearmarPantalla('expandidoInternet')">&#xe894;</i>*@
+            <img src="~/Files/Internet-white.png" height="22" alt="Alternate Text" onclick="rearmarPantalla('expandidoInternet')" />
         </div>
         <div style='width: 20%; float: left'>
             <img id='imgReducidoInternet' src='~/Files/iconRojo.png' class='boton_grande' alt='' />
         </div>
         <div style='width: 70%; float: left; padding-top: 12px'>
             @*<%--Telefonía --%>*@
-            <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
-               onclick="rearmarPantalla('expandidoTelefonia')">&#xe0cd;</i>
+            @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
+               onclick="rearmarPantalla('expandidoTelefonia')">&#xe0cd;</i>*@
+            <img src="~/Files/Phone-white.png" height="22" alt="Alternate Text" onclick="rearmarPantalla('expandidoTelefonia')" />
         </div>
         <div style='width: 20%; float: left'>
             <img id='imgReducidoTelefonia' src='~/Files/iconVerde.png' class='boton_grande' alt='' />
         </div>
         <div style='width: 70%; float: left; padding-top: 12px'>
             @*<%--Telefonía Móvil --%>*@
-            <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
-               onclick="rearmarPantalla('expandidoTelefoniaMovil')">&#xe0d6;</i>
+            @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
+               onclick="rearmarPantalla('expandidoTelefoniaMovil')">&#xe0d6;</i>*@
+            <img src="~/Files/Mobilphone-white.png" height="22" alt="Alternate Text" onclick="rearmarPantalla('expandidoTelefoniaMovil')" />
         </div>
         <div style='width: 20%; float: left'>
             <img id='imgReducidoTelefoniaMovil' src='~/Files/iconVerde.png' class='boton_grande'
@@ -641,6 +644,7 @@
                 class='elBordeChico'></iframe>
     </div>
 </div>
+
 <div class="modal" tabindex="-1" role="dialog" id="idModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

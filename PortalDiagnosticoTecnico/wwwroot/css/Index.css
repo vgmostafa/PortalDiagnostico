@@ -49,6 +49,7 @@ body{
 .row{
     margin-left: 0 !important;
     margin-right: 0 !important;
+    font-size: 13px;
 }
 .boton_grande {
     width: 48px;
