@@ -53,13 +53,12 @@
 
         </div>
 
+        @************* Video **********@
         <div class='submenu video_padre d-inline-block w-100'>
             <div class="d-inline-block" style='width: 100%'>
                 <div style='width: 75%; float: left; display: flex; align-items: center; height: 40px'>
                     <div style='float: left'>
-                        <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer;'>
-                            &#xe04b;
-                        </i>
+                        <img src="~/Files/Camera-white.png" height="24" alt="Alternate Text" />
                     </div>
                     <div style='float: left; display: flex; align-items: center; justify-content: center;
                             height: 40px'>
@@ -71,11 +70,12 @@
                     <img id='imgVideo' src='~/Files/iconVerde.png' class='boton_grande' alt='' />
                 </div>
             </div>
-            <div id='tablaVideo' class='usaDetalle video_hijo' style='margin-left: 3rem'>
-                <div onclick="llave_video=1" style='width: 100%; display: flex'>
+
+            <div id='tablaVideo' class='usaDetalle video_hijo d-none' style='margin-left: 3rem'>
+                <div onclick="llave_video=1" class="btn-center-vertical" style='width: 100%; display: flex'>
                     <div style='float: left; width: 40%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> Flow
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        Flow
                     </div>
                     <div style='float: left; width: 60%'>
                         <img id='imgVideoFlow' src='~/Files/iconVerde.png' class='boton_chico' alt='' />
@@ -119,14 +119,14 @@
                         &nbsp;
                     </div>
                     <div class='col-12 usaDetalle' onclick="ejecutar('adm_wifi')" style='cursor: pointer'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                         Administración de Flow
                     </div>
                 </div>
-                <div onclick="llave_video=2" style='width: 100%; display: flex'>
+                <div onclick="llave_video=2" style='width: 100%; display: flex' class="btn-center-vertical">
                     <div style='float: left; width: 40%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> Flow App
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        Flow App
                     </div>
                     <div style='float: left; width: 60%'>
                         <img id='imgVideoFlowApp' src='~/Files/iconVerde.png' class='boton_chico' style='margin-top: -3px'
@@ -171,20 +171,19 @@
                         &nbsp;
                     </div>
                     <div class='col-12 usaDetalle' onclick="ejecutar('adm_wifi')" style='cursor: pointer'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                         Administración de Flow App
                     </div>
                 </div>
             </div>
         </div>
 
+        @************* Internet **********@
         <div class='submenu internet_padre d-inline-block w-100'>
             <div style='width: 100%'>
                 <div style='width: 75%; float: left; display: flex; align-items: center; height: 40px'>
                     <div style='float: left'>
-                        <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer;'>
-                            &#xe894;
-                        </i>
+                        <img src="~/Files/Internet-white.png" height="24" alt="Alternate Text" />
                     </div>
                     <div style='float: left; height: 1.5rem'>
                         <span class='usaSubtitulo'>Internet</span>
@@ -195,11 +194,12 @@
                     <img id='imgInternet' src='~/Files/iconRojo.png' class='boton_grande' alt='' />
                 </div>
             </div>
-            <div id='tablaInternet' class='usaDetalle internet_hijo' style='margin-left: 3rem'>
-                <div onclick="llave_internet=1" style='width: 100%; display: flex'>
+
+            <div id='tablaInternet' class='usaDetalle internet_hijo d-none' style='margin-left: 3rem'>
+                <div onclick="llave_internet=1" style='width: 100%; display: flex' class="btn-center-vertical">
                     <div style='float: left; width: 50%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> Sagem SG3838
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        Sagem SG3838
                     </div>
                     <div style='float: left; width: 50%'>
                         <img id='imgInternetSagem' src='~/Files/iconRojo.png' class='boton_chico' style='margin-top: -3px'
@@ -267,37 +267,37 @@
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('firmware')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Administrador de Firmware
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('stbip_auto')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Flujo de Resolución de Problemas STBIP (automático)
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('reinicio')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Reinicio
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('reinicio_fabrica')" style='width: 100%;
                                 padding-left: 0.5rem; cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Reinicio a Valores de Fábrica
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('general')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Información General
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('stbip_trouble')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             STBIP_troubleshoooting
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('test_velocidad')" style='width: 100%;
                                 padding-left: 0.5rem; cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Test de velocidad
                         </div>
                         <div style='width: 100%'>
@@ -311,7 +311,7 @@
                         </div>
                         <div class=' usaDetalle' onclick="ejecutar('adm_Docis')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Docsis
                         </div>
                     </div>
@@ -319,10 +319,10 @@
                         &nbsp;
                     </div>
                 </div>
-                <div onclick="llave_internet=2" style='width: 100%; display: flex'>
+                <div onclick="llave_internet=2" style='width: 100%; display: flex' class="btn-center-vertical">
                     <div style='float: left; width: 50%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> Huawei HG8245U
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        Huawei HG8245U
                     </div>
                     <div style='float: left; width: 50%'>
                         <img id='imgInternetHuawei' src='~/Files/iconVerde.png' class='boton_chico' style='margin-top: -3px'
@@ -390,7 +390,7 @@
                         </div>
                         <div class='usaDetalle' onclick="ejecutar('adm_Huawei')" style='width: 100%; padding-left: 0.5rem;
                                 cursor: pointer'>
-                            <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                            <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                             Administración de HUAWEI
                         </div>
                         <div style='display: flex; width: 100%;'>
@@ -398,10 +398,10 @@
                         </div>
                     </div>
                 </div>
-                <div onclick="llave_internet=3" style='width: 100%; display: flex'>
+                <div onclick="llave_internet=3" style='width: 100%; display: flex' class="btn-center-vertical">
                     <div style='float: left; width: 50%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> Wifi
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        Wifi
                     </div>
                     <div style='float: left; width: 50%'>
                         <img id='imgWifi' src='~/Files/iconVerde.png' class='boton_chico' style='margin-top: -3px'
@@ -418,7 +418,7 @@
                     </div>
                     <div class='usaDetalle' onclick="ejecutar('adm_wifi')" style='width: 100%; padding-left: 0.5rem;
                             cursor: pointer'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                         Administración de WIFI
                     </div>
                     <div style='width: 100%;'>
@@ -430,12 +430,10 @@
 
         @************* Telefonia **********@
         <div class='submenu telefonia_padre d-inline-block w-100'>
-            <div style='width: 100%;' onclick="llave_telefonia=1">
+            <div class="d-inline-block" style='width: 100%;' onclick="llave_telefonia=1">
                 <div style='width: 75%; float: left; display: flex; align-items: center; height: 40px'>
                     <div style='float: left'>
-                        <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer;'>
-                            &#xe0cd;
-                        </i>
+                        <img src="~/Files/Phone-white.png" height="25" alt="Alternate Text" />
                     </div>
                     <div style='float: left'>
                         <span class='usaSubtitulo'>Telefonía</span>
@@ -446,11 +444,12 @@
                     <img id='imgTelefonia' src='~/Files/iconRojo.png' class='boton_grande' alt='' />
                 </div>
             </div>
-            <div class='usaDetalle telefonia_hijo' style='margin-left: 3rem'>
-                <div onclick="llave_telefonia=2" style='width: 100%; display: flex'>
+
+            <div class='usaDetalle telefonia_hijo d-none' style='margin-left: 3rem'>
+                <div onclick="llave_telefonia=2" style='width: 100%; display: flex' class="btn-center-vertical">
                     <div style='width: 50%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> (011) 4968-7200
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        (011) 4968-7200
                     </div>
                     <div style='width: 50%;'>
                         <img id='imgTelefoniaLinea' src='~/Files/iconVerde.png' class='boton_chico' style='margin-top: -3px'
@@ -458,7 +457,8 @@
                     </div>
                 </div>
             </div>
-            <div id='divHijoTelefonia' class='usaDetalle esHijo' style='margin-left: 3rem'>
+
+            <div id='divHijoTelefonia' class='usaDetalle esHijo d-none' style='margin-left: 3rem'>
                 <div style='display: flex; width: 100%;'>
                     <div class='text-right' style='width: 25%'>
                         Línea
@@ -494,7 +494,7 @@
                 </div>
                 <div class='usaDetalle' onclick="ejecutar('adm_wifi')" style='width: 100%; padding-left: 0.5rem;
                         cursor: pointer'>
-                    <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                    <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                     Diagnóstico de Telefonìa
                 </div>
                 <div style='width: 100%;'>
@@ -505,12 +505,10 @@
 
         @************* Telefonia Móvil **********@
         <div class='submenu telefoniaMovil_padre d-inline-block w-100'>
-            <div style='width: 100%' onclick="llave_telefoniaMovil=1">
+            <div class="d-inline-block" style='width: 100%' onclick="llave_telefoniaMovil=1">
                 <div style='width: 75%; float: left; display: flex; align-items: center; height: 40px'>
                     <div style='float: left'>
-                        <i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer;'>
-                            &#xe0d4;
-                        </i>
+                        <img src="~/Files/Mobilphone-white.png" height="24" alt="Alternate Text" />
                     </div>
                     <div style='float: left;'>
                         <span class='usaSubtitulo'>Telefonía Móvil</span>
@@ -521,11 +519,12 @@
                     <img id='imgTelefoniaMovil' src='~/Files/iconVerde.png' class='boton_grande' alt='' />
                 </div>
             </div>
-            <div class='usaDetalle telefoniaMovil_hijo' style='margin-left: 3rem'>
-                <div onclick="llave_telefoniaMovil=2" style='width: 100%; display: flex'>
+
+            <div class='usaDetalle telefoniaMovil_hijo d-none' style='margin-left: 3rem'>
+                <div onclick="llave_telefoniaMovil=2" style='width: 100%; display: flex' class="btn-center-vertical">
                     <div style='width: 50%'>
-                        <i class="material-icons" style='font-size: 0.8rem; cursor: pointer; margin-left: -15px;
-                                margin-top: 5px'>&#xe037;</i> (15) 6859-1445
+                        <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
+                        (15) 6859-1445
                     </div>
                     <div style='width: 50%;'>
                         <img id='imgTelefoniaLineaMovil' src='~/Files/iconVerde.png' class='boton_chico' style='margin-top: -3px'
@@ -533,7 +532,8 @@
                     </div>
                 </div>
             </div>
-            <div id='divHijoTelefoniaMovil' class='usaDetalle esHijo' style='margin-left: 3rem'>
+
+            <div id='divHijoTelefoniaMovil' class='usaDetalle esHijo d-none' style='margin-left: 3rem'>
                 <div style='display: flex; width: 100%;'>
                     <div class='text-right' style='width: 25%'>
                         Línea
@@ -561,7 +561,7 @@
                 </div>
                 <div class='usaDetalle' onclick="ejecutar('telefoniaMovil')" style='width: 100%;
                         padding-left: 0.5rem; cursor: pointer'>
-                    <i class="material-icons" style='font-size: 0.8rem; cursor: pointer'>&#xe037;</i>
+                    <img src="~/Files/Row-right.png" height="12" alt="Alternate Text" />
                     Diagnóstico de Telefonìa Móvil
                 </div>
                 <div style='width: 100%;'>
@@ -571,11 +571,10 @@
         </div>
         <div style='width: 100%; height: 2px; display: flex; float: left' class='elFondo'>
         </div>
-        <br />
     </div>
 
     @********* Sidebar Reducido **********@
-    <div class='col-1 elBorde elSidebar usaDetalle laSombra' style='width: 100%;
+    <div class='col-1 elBorde elSidebar usaDetalle laSombra d-none' style='width: 100%;
             display: flex' id='sidebarReducido'>
         <div style='width: 100%' align="right">
             <img src='~/Files/pin.png' alt='' style='width: 20px; height: 20px; cursor: pointer'
