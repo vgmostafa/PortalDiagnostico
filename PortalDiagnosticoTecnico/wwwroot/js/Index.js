@@ -605,7 +605,7 @@ function seleccionaMail() {
 }
 
 function BuscarDatos() {
-    $("#txtDNI").val("");
+    $("#txtDNI").val("23829089");
     $("#datos").html("");
     $("#idModal").modal('show');
 

@@ -82,7 +82,7 @@
                 </div>
                 <div>
                     <b><span id='spanAntiguedad'></span></b>
-                    <img src="~/Files/iconVerde.png" class='boton_chico' alt='' style='margin-left: -10px' />
+                    <img src="~/Files/iconVerde.png" class='boton_chico d-none' alt='' style='margin-left: -10px' />
                 </div>
             </div>
             <div class="col-md-3 pt-3">
@@ -93,11 +93,11 @@
                 <span id='header_localidad_pcia'></span>
                 <div style='display: flex; align-items: center;'>
                     <img src="~/Files/Phone-white.png" height="22" alt="Alternate Text" />
-                    <select id='cmbTelefonos' class='detalle_combo' style='float: left' onchange='seleccionaTelefono()'></select>
+                    <select id='cmbTelefonos' class='detalle_combo form-control select-custom' style='float: left' onchange='seleccionaTelefono()'></select>
                 </div>
                 <div style='display: flex; align-items: center;'>
                     <img src="~/Files/Mail-white.png" height="22" alt="Alternate Text" />
-                    <select id='cmbMails' class='detalle_combo' style='float: left' onchange='seleccionaMail()'></select>
+                    <select id='cmbMails' class='detalle_combo form-control select-custom' style='float: left' onchange='seleccionaMail()'></select>
                 </div>
             </div>
             <div class="col-md-2 pt-3">
@@ -115,7 +115,7 @@
     </div>
 
     <div class="container">
-        <partial name="_CookieConsentPartial" />
+        @*<partial name="_CookieConsentPartial" />*@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

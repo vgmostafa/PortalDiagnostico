@@ -55,7 +55,14 @@ body{
     width: 48px;
     height: 48px;
 }
-
+.select-custom{
+    height: 22px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-right: 10%;
+}
 
 ul, #myUL {
     list-style-type: none;

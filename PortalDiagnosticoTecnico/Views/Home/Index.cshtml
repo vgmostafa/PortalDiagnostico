@@ -15,7 +15,7 @@
 </div>
 
 <div style='margin-left: 15px; padding-top: 10px; width: 100%; display: flex'>
-    <div class='col-3 elBorde elSidebar laSombra content-menu' id='sidebarExpandido'>
+    <div class='col-3 elBorde elSidebar laSombra content-menu d-none' id='sidebarExpandido'>
         <div style='width: 100%; display: flex'>
             <div style='width: 90%; float: left'>
                 <span class='usaSubtitulo'>Estado de Red</span>
@@ -580,7 +580,7 @@
                  class='rotateAbajo' onclick="rearmarPantalla('expandido')" />
         </div>
         <div style='width: 100%; display: flex'>
-            <div style='width: 70%; float: left; padding-top: 15px'>
+            <div style='width: 60%; float: left; padding-top: 15px'>
                 <span>Red</span>
             </div>
             <div style='width: 20%; float: left'>
@@ -588,7 +588,7 @@
             </div>
         </div>
         <div style='width: 100%; display: flex'>
-            <div style='width: 70%; float: left; padding-top: 15px'>
+            <div style='width: 60%; float: left; padding-top: 15px'>
                 <span>Servicios</span>
             </div>
             <div style='width: 20%; float: left'>
@@ -598,16 +598,14 @@
         <div style='width: 100%; height: 3px' class='elFondo'>
             &nbsp;
         </div>
-        <div style='width: 70%; float: left; padding-top: 12px'>
+        <div style='width: 60%; float: left; padding-top: 12px'>
             @*<%-- Video --%>*@
-            @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
-               onclick="rearmarPantalla('expandidoVideo')">&#xe04b;</i>*@
             <img src="~/Files/Camera-white.png" height="22" alt="Alternate Text" onclick="rearmarPantalla('expandidoVideo')" />
         </div>
         <div style='width: 20%; float: left'>
             <img id='imgReducidoVideo' src='~/Files/iconVerde.png' class='boton_grande' alt='' />
         </div>
-        <div style='width: 70%; float: left; padding-top: 12px'>
+        <div style='width: 60%; float: left; padding-top: 12px'>
             @*<%--Internet --%>*@
             @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
                onclick="rearmarPantalla('expandidoInternet')">&#xe894;</i>*@
@@ -616,7 +614,7 @@
         <div style='width: 20%; float: left'>
             <img id='imgReducidoInternet' src='~/Files/iconRojo.png' class='boton_grande' alt='' />
         </div>
-        <div style='width: 70%; float: left; padding-top: 12px'>
+        <div style='width: 60%; float: left; padding-top: 12px'>
             @*<%--Telefonía --%>*@
             @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
                onclick="rearmarPantalla('expandidoTelefonia')">&#xe0cd;</i>*@
@@ -625,7 +623,7 @@
         <div style='width: 20%; float: left'>
             <img id='imgReducidoTelefonia' src='~/Files/iconVerde.png' class='boton_grande' alt='' />
         </div>
-        <div style='width: 70%; float: left; padding-top: 12px'>
+        <div style='width: 60%; float: left; padding-top: 12px'>
             @*<%--Telefonía Móvil --%>*@
             @*<i class="material-icons usaColorIconos" style='font-size: 1.5rem; cursor: pointer'
                onclick="rearmarPantalla('expandidoTelefoniaMovil')">&#xe0d6;</i>*@
