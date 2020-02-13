@@ -8,6 +8,7 @@
 body{
     font-family: Montserrat !important;
     background-color: #767070;
+    margin-bottom: 0 !important;
 }
 .container {
     width: 100%;
@@ -15,7 +16,7 @@ body{
     height: 100%;
 }
 .pb-3 {
-    margin-top: 2% !important;
+    margin-top: 1% !important;
 }
 .titulo {
     font-size: 2.1rem;
