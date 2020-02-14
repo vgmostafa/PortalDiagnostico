@@ -358,42 +358,95 @@ function ejecutar(cual) {
     $("#divFrame").css('visibility', 'visible');
     switch (cual) {
         case 'firmware':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=HC-CPEWifiOptimize");
             break;
         case 'stbip_auto':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=HC-CPEWifiOptimize");
             break;
         case 'reinicio':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=HC-CPEWifiOptimize");
             break;
         case 'reinicio_fabrica':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=HC-CPEWifiOptimize");
             break;
         case 'general':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=HC-CPEWifiOptimize");
             break;
         case 'stbip_trouble':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=STBIP_troubleshooting");
             break;
         case 'adm_wifi':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/Consultas_Modem_HDM.aspx?signed=true&legajo=wdi585714");
             break;
         case 'adm_huawei':
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', "https://webgestionmoviltesting/consulta_WF.aspx?signed=true&legajo=wdi585714&wf=HC-CPEWifiOptimize");
             break;
         case 'adm_Docis':
-            $("#el_iframe").attr('src', "NXT.aspx");
+
+            $('#el_iframe').removeClass('d-block').addClass('d-none');
+            $('#divFrame-content').removeClass('d-none').addClass('d-block');
+            $.ajax({
+                type: "GET",
+                url: '/Home/NXT',
+                contentType: 'html',
+                dataType: 'html',
+                async: true,
+                beforeSend: function () {
+                },
+                success: function (response) {
+                    $('#divFrame-content').html(response);
+                },
+                error: function (errorThrown) {
+                }
+            });
             break;
+
         case "telefoniaMovil":
-            $("#el_iframe").attr('src', 'telefoniaMovil.aspx');
+
+            $('#el_iframe').removeClass('d-block').addClass('d-none');
+            $('#divFrame-content').removeClass('d-none').addClass('d-block');
+
+            $.ajax({
+                type: "GET",
+                url: '/Home/TelefoniaMovil',
+                contentType: 'html',
+                dataType: 'html',
+                async: true,
+                beforeSend: function () {
+                },
+                success: function (response) {
+                    $('#divFrame-content').html(response);
+                },
+                error: function (errorThrown) {
+                }
+            });
             break;
         case "test_velocidad":
+            $('#divFrame-content').removeClass('d-block').addClass('d-none');
+            $('#el_iframe').removeClass('d-none').addClass('d-block');
             $("#el_iframe").attr('src', 'https://portaldiagnosticouat.telecom.com.ar/SpeedTest.html');
             break;
     }
 }
 function ActualizarEstado() {
 
+    $('#btn-close-modal').click();
     var datos = { accion: 'iniciarDatosUsuario' };
 
     $.ajax({

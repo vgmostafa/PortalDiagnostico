@@ -15,6 +15,16 @@ namespace PortalDiagnosticoTecnico.Controllers
             return View();
         }
 
+        public IActionResult TelefoniaMovil()
+        {
+            return PartialView("TelefoniaMovil");
+        }
+
+        public IActionResult NXT()
+        {
+            return PartialView("NXT");
+        }
+
         public IActionResult Privacy()
         {
             return View();

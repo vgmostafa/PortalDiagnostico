@@ -15,7 +15,7 @@
 </div>
 
 <div style='margin-left: 15px; padding-top: 10px; width: 100%; display: flex'>
-    <div class='col-3 elBorde elSidebar laSombra content-menu d-none' id='sidebarExpandido'>
+    <div class='col-3 elBorde elSidebar laSombra content-menu d-none shadow-custom' id='sidebarExpandido'>
         <div style='width: 100%; display: flex'>
             <div style='width: 90%; float: left'>
                 <span class='usaSubtitulo'>Estado de Red</span>
@@ -574,7 +574,7 @@
     </div>
 
     @********* Sidebar Reducido **********@
-    <div class='col-1 elBorde elSidebar usaDetalle laSombra d-none' style='width: 100%; padding-bottom: 20px;' id='sidebarReducido'>
+    <div class='col-1 shadow-custom elBorde elSidebar usaDetalle laSombra d-none' style='width: 100%; padding-bottom: 20px;' id='sidebarReducido'>
         <div style='width: 100%' align="right">
             <img src='~/Files/pin.png' alt='' style='width: 20px; height: 20px; cursor: pointer'
                  class='rotateAbajo' onclick="rearmarPantalla('expandido')" />
@@ -638,8 +638,12 @@
     </div>
     @*<%--****** Fin Sidebar Reducido *******--%>*@
     <div class='col-9' id='divFrame'>
-        <iframe src="" style="width: 100%; height: 100%; border: none" id="el_iframe" name="el_iframe"
-                class='elBordeChico'></iframe>
+        <div id="divFrame-content" class="mb-5 shadow-custom">
+            
+        </div>
+        <iframe src="" style="width: 100%; height: 100%; border: none" id="el_iframe" name="el_iframe" class='d-none elBordeChico shadow-custom background-custom'>
+
+        </iframe>
     </div>
 </div>
 
@@ -671,7 +675,7 @@
                 <button type="button" class="btn btn-primary btn-sm" onclick="ActualizarEstado()">
                     Seleccionar
                 </button>
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal" id="btn-close-modal">
                     Cerrar
                 </button>
             </div>

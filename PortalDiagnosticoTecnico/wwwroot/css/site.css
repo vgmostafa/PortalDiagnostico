@@ -56,3 +56,6 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
+.shadow-custom {
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
